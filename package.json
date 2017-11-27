@@ -45,5 +45,16 @@
     "release-major": "xyz --repo git@github.com:fantasyland/fantasy-land.git --increment major",
     "release-minor": "xyz --repo git@github.com:fantasyland/fantasy-land.git --increment minor",
     "release-patch": "xyz --repo git@github.com:fantasyland/fantasy-land.git --increment patch"
+  },
+  "wilton": {
+    "excludes": [
+      "figures",
+      "internal",
+      "laws",
+      "bower.json",
+      "implementations.md",
+      "logo.png",
+      "test.js"
+    ]
   }
 }

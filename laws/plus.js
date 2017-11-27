@@ -1,3 +1,4 @@
+define(function(){var require = WILTON_requiresync;var module = {exports: {}};var exports = module.exports;
 'use strict';
 
 const {zero, alt, map} = require('..');
@@ -28,3 +29,5 @@ const annihilation = T => eq => f => eq(
 );
 
 module.exports = {rightIdentity, leftIdentity, annihilation};
+
+return module.exports;});

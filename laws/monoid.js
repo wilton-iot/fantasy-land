@@ -1,3 +1,4 @@
+define(function(){var require = WILTON_requiresync;var module = {exports: {}};var exports = module.exports;
 'use strict';
 
 const {of, empty, concat} = require('..');
@@ -24,3 +25,5 @@ const leftIdentity = T => eq => x => {
 };
 
 module.exports = {rightIdentity, leftIdentity};
+
+return module.exports;});

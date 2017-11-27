@@ -1,9 +1,10 @@
+define(function(){var require = WILTON_requiresync;var module = {exports: {}};var exports = module.exports;
 'use strict';
 
 const {tagged} = require('daggy');
 
 const fl = require('..');
-const {equality} = require('./func');
+const {equality} = require('fantasy-land/func');
 
 const Compose = module.exports = tagged('c');
 Compose[fl.of] = Compose;
@@ -16,3 +17,5 @@ Compose.prototype[fl.map] = function(f) {
 Compose.prototype[fl.equals] = function(x) {
   return equality(this.c, x.c);
 };
+
+return module.exports;});

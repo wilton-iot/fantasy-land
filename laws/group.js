@@ -1,3 +1,4 @@
+define(function(){var require = WILTON_requiresync;var module = {exports: {}};var exports = module.exports;
 'use strict';
 
 const {of, empty, concat, invert} = require('..');
@@ -28,3 +29,5 @@ const leftInverse = T => eq => x => {
 };
 
 module.exports = {rightInverse, leftInverse};
+
+return module.exports;});

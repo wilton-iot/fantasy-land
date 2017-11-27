@@ -1,3 +1,4 @@
+define(function(){var require = WILTON_requiresync;var module = {exports: {}};var exports = module.exports;
 'use strict';
 
 const {map} = require('..');
@@ -24,3 +25,5 @@ const composition = of => eq => f => g => x => {
 };
 
 module.exports = {identity, composition};
+
+return module.exports;});

@@ -1,3 +1,4 @@
+define(function(){var require = WILTON_requiresync;var module = {exports: {}};var exports = module.exports;
 'use strict';
 
 const {identity, thrush} = require('fantasy-combinators');
@@ -34,3 +35,5 @@ const interchange = T => eq => x => {
 };
 
 module.exports = {identity: identityʹ, homomorphism, interchange};
+
+return module.exports;});

@@ -1,3 +1,4 @@
+define(function(){var require = WILTON_requiresync;var module = {exports: {}};var exports = module.exports;
 'use strict';
 
 const {compose} = require('..');
@@ -17,3 +18,5 @@ const associativity = f => g => h => eq => x => {
 };
 
 module.exports = {associativity};
+
+return module.exports;});

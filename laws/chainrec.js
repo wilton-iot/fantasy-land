@@ -1,3 +1,4 @@
+define(function(){var require = WILTON_requiresync;var module = {exports: {}};var exports = module.exports;
 'use strict';
 
 const {chain, map, chainRec} = require('..');
@@ -19,3 +20,5 @@ const equivalence = T => eq => p => d => n => x => {
 };
 
 module.exports = {equivalence};
+
+return module.exports;});

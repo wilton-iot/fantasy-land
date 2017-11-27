@@ -1,10 +1,11 @@
+define(function(){var require = WILTON_requiresync;var module = {exports: {}};var exports = module.exports;
 'use strict';
 
-const patch = require('./patch');
-const Id = require('./id');
-const Sum = require('./sum');
-const Compose = require('./compose');
-const {equality} = require('./func');
+const patch = require('fantasy-land/patch');
+const Id = require('fantasy-land/id');
+const Sum = require('fantasy-land/sum');
+const Compose = require('fantasy-land/compose');
+const {equality} = require('fantasy-land/func');
 
 module.exports = {
   Id,
@@ -13,3 +14,5 @@ module.exports = {
   equality,
   patch,
 };
+
+return module.exports;});
