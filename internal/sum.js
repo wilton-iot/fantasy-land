@@ -1,4 +1,4 @@
-define(function(){var require = WILTON_requiresync;var module = {exports: {}};var exports = module.exports;
+define(function(localRequire, exports, module) { var requireOrig = require; require = localRequire;
 'use strict';
 
 const {tagged} = require('daggy');
@@ -23,4 +23,4 @@ Sum.prototype[fl.invert] = function() {
   return Sum(this.v >= 0 ? -Math.abs(this.v) : Math.abs(this.v));
 };
 
-return module.exports;});
+require = requireOrig;});

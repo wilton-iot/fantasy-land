@@ -1,7 +1,7 @@
-define(function(){var require = WILTON_requiresync;var module = {exports: {}};var exports = module.exports;
+define(function(localRequire, exports, module) { var requireOrig = require; require = localRequire;
 'use strict';
 
-const fl = require('fantasy-land/');
+const fl = require('fantasy-land');
 const {equality, lte} = require('fantasy-land/func');
 
 const {tagged} = require('daggy');
@@ -81,4 +81,4 @@ Id.prototype[fl.extract] = function() {
   return this.value;
 };
 
-return module.exports;});
+require = requireOrig;});

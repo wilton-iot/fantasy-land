@@ -1,7 +1,7 @@
-define(function(){var require = WILTON_requiresync;var module = {exports: {}};var exports = module.exports;
+define(function(localRequire, exports, module) { var requireOrig = require; require = localRequire;
 'use strict';
 
-const fl = require('fantasy-land/');
+const fl = require('fantasy-land');
 const equality = (x, y) => typeof x[fl.equals] === 'function' ? x[fl.equals](y) : x === y;
 const lte = (x, y) => {
   if (typeof y[fl.lte] === 'function') return y[fl.lte](x);
@@ -16,4 +16,4 @@ module.exports = {
   lte,
 };
 
-return module.exports;});
+require = requireOrig;});
