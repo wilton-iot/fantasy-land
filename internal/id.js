@@ -1,8 +1,7 @@
-define(function(){var require = WILTON_requiresync;var module = {exports: {}};var exports = module.exports;
 'use strict';
 
-const fl = require('fantasy-land/');
-const {equality, lte} = require('fantasy-land/func');
+const fl = require('../');
+const {equality, lte} = require('./func');
 
 const {tagged} = require('daggy');
 
@@ -80,5 +79,3 @@ Id[fl.of] = function(a) {
 Id.prototype[fl.extract] = function() {
   return this.value;
 };
-
-return module.exports;});

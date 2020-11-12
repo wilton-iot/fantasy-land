@@ -1,7 +1,6 @@
-define(function(){var require = WILTON_requiresync;var module = {exports: {}};var exports = module.exports;
 'use strict';
 
-const {Id, Compose} = require('fantasy-land/internal');
+const {Id, Compose} = require('../internal');
 const {identity} = require('fantasy-combinators');
 const {of, traverse, map} = require('..');
 
@@ -42,5 +41,3 @@ const composition = T => t => eq => x => {
 };
 
 module.exports = {naturality, identity: identityʹ, composition};
-
-return module.exports;});

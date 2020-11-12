@@ -1,4 +1,3 @@
-define(function(){var require = WILTON_requiresync;var module = {exports: {}};var exports = module.exports;
 'use strict';
 
 const {compose, id} = require('..');
@@ -25,5 +24,3 @@ const rightIdentity = f => eq => x => {
 };
 
 module.exports = {leftIdentity, rightIdentity};
-
-return module.exports;});

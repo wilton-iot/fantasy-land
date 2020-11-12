@@ -1,4 +1,3 @@
-define(function(){var require = WILTON_requiresync;var module = {exports: {}};var exports = module.exports;
 'use strict';
 
 const {equals} = require('..');
@@ -42,5 +41,3 @@ const transitivity = t => eq => x => {
 };
 
 module.exports = {reflexivity, symmetry, transitivity};
-
-return module.exports;});

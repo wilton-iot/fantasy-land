@@ -1,4 +1,3 @@
-define(function(){var require = WILTON_requiresync;var module = {exports: {}};var exports = module.exports;
 'use strict';
 
 const {identity, compose} = require('fantasy-combinators');
@@ -21,5 +20,3 @@ const composition = t => eq => x => {
 };
 
 module.exports = {composition};
-
-return module.exports;});

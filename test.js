@@ -1,30 +1,29 @@
-define(function(){var require = WILTON_requiresync;var module = {exports: {}};var exports = module.exports;
 'use strict';
 
 const fl = require('.');
-const {Id, equality, Sum, patch} = require('fantasy-land/internal');
+const {Id, equality, Sum, patch} = require('./internal');
 patch();
 
-const alt = require('fantasy-land/laws/alt');
-const alternative = require('fantasy-land/laws/alternative');
-const applicative = require('fantasy-land/laws/applicative');
-const apply = require('fantasy-land/laws/apply');
-const chain = require('fantasy-land/laws/chain');
-const chainRec = require('fantasy-land/laws/chainrec');
-const comonad = require('fantasy-land/laws/comonad');
-const extend = require('fantasy-land/laws/extend');
-const foldable = require('fantasy-land/laws/foldable');
-const functor = require('fantasy-land/laws/functor');
-const group = require('fantasy-land/laws/group');
-const monad = require('fantasy-land/laws/monad');
-const monoid = require('fantasy-land/laws/monoid');
-const ord = require('fantasy-land/laws/ord');
-const plus = require('fantasy-land/laws/plus');
-const semigroup = require('fantasy-land/laws/semigroup');
-const semigroupoid = require('fantasy-land/laws/semigroupoid');
-const category = require('fantasy-land/laws/category');
-const setoid = require('fantasy-land/laws/setoid');
-const traversable = require('fantasy-land/laws/traversable');
+const alt = require('./laws/alt');
+const alternative = require('./laws/alternative');
+const applicative = require('./laws/applicative');
+const apply = require('./laws/apply');
+const chain = require('./laws/chain');
+const chainRec = require('./laws/chainrec');
+const comonad = require('./laws/comonad');
+const extend = require('./laws/extend');
+const foldable = require('./laws/foldable');
+const functor = require('./laws/functor');
+const group = require('./laws/group');
+const monad = require('./laws/monad');
+const monoid = require('./laws/monoid');
+const ord = require('./laws/ord');
+const plus = require('./laws/plus');
+const semigroup = require('./laws/semigroup');
+const semigroupoid = require('./laws/semigroupoid');
+const category = require('./laws/category');
+const setoid = require('./laws/setoid');
+const traversable = require('./laws/traversable');
 
 const test = f => t => {
   t.ok(f('x') === true);
@@ -138,5 +137,3 @@ exports.traversable = {
   identity: test(traversable.identity(Id)(equality)),
   composition: test(() => traversable.composition(Id)(Id[fl.of])(equality)(Id[fl.of](Sum[fl.of](37)))),
 };
-
-return module.exports;});

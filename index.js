@@ -1,4 +1,3 @@
-define(function(){var require = WILTON_requiresync;var module = {exports: {}};var exports = module.exports;
 (function() {
 
   'use strict';
@@ -37,5 +36,3 @@ define(function(){var require = WILTON_requiresync;var module = {exports: {}};va
   }
 
 }());
-
-return module.exports;});
