@@ -1,4 +1,4 @@
-(function() {
+define(function(localRequire, exports, module) { var requireOrig = require; require = localRequire;
 
   'use strict';
 
@@ -35,4 +35,4 @@
     self.FantasyLand = mapping;
   }
 
-}());
+require = requireOrig;});
