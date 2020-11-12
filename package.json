@@ -45,5 +45,17 @@
     "lint": "sanctuary-lint",
     "release": "sanctuary-release",
     "test": "npm run lint && sanctuary-test && npm run doctest"
+  },
+  "wilton": {
+    "excludes": [
+      "figures",
+      "scripts",
+      "test",
+      "index.d.ts",
+      "index.mjs",
+      "logo.png",
+      "names",
+      "test.js"
+    ]
   }
 }
