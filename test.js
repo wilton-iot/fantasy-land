@@ -1,4 +1,4 @@
-define(function(localRequire, exports, module) { var requireOrig = require; require = localRequire;
+define(function(){var require = WILTON_requiresync;var module = {exports: {}};var exports = module.exports;
 'use strict';
 
 const fl = require('.');
@@ -139,4 +139,4 @@ exports.traversable = {
   composition: test(() => traversable.composition(Id)(Id[fl.of])(equality)(Id[fl.of](Sum[fl.of](37)))),
 };
 
-require = requireOrig;});
+return module.exports;});

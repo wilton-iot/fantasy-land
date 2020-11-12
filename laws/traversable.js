@@ -1,4 +1,4 @@
-define(function(localRequire, exports, module) { var requireOrig = require; require = localRequire;
+define(function(){var require = WILTON_requiresync;var module = {exports: {}};var exports = module.exports;
 'use strict';
 
 const {Id, Compose} = require('fantasy-land/internal');
@@ -43,4 +43,4 @@ const composition = T => t => eq => x => {
 
 module.exports = {naturality, identity: identityʹ, composition};
 
-require = requireOrig;});
+return module.exports;});

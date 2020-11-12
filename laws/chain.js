@@ -1,4 +1,4 @@
-define(function(localRequire, exports, module) { var requireOrig = require; require = localRequire;
+define(function(){var require = WILTON_requiresync;var module = {exports: {}};var exports = module.exports;
 'use strict';
 
 const {of, chain} = require('..');
@@ -19,4 +19,4 @@ const associativity = t => eq => x => {
 
 module.exports = {associativity};
 
-require = requireOrig;});
+return module.exports;});

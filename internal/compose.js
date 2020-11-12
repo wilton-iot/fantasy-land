@@ -1,4 +1,4 @@
-define(function(localRequire, exports, module) { var requireOrig = require; require = localRequire;
+define(function(){var require = WILTON_requiresync;var module = {exports: {}};var exports = module.exports;
 'use strict';
 
 const {tagged} = require('daggy');
@@ -18,4 +18,4 @@ Compose.prototype[fl.equals] = function(x) {
   return equality(this.c, x.c);
 };
 
-require = requireOrig;});
+return module.exports;});
